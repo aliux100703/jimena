@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Poppings');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+body, #card h2, #card p, .text, .made-with-love {
+  font-family: 'Poppins', sans-serif !important;
+
+}
 #card {
   height: 900px;
   width: 1000px;
@@ -11,12 +15,11 @@
   visibility: hidden;
 }
 
-
 /* Estilos para dispositivos mÃ³viles */
 @media only screen and (max-width: 600px) {
   #card {
-    width: 85%; /* Reducir el ancho para dispositivos mÃ³viles */
-    height: 100%; /* Permitir que la altura se ajuste automÃ¡ticamente */
+    width: 90%; /* Reducir el ancho para dispositivos mÃ³viles */
+    height: auto; /* Permitir que la altura se ajuste automÃ¡ticamente */
     margin: 2em auto; /* Ajustar el margen */
     position: static; /* Cambiar la posiciÃ³n a estÃ¡tica para que no sea fija */
     visibility: none; /* Hacer que el elemento sea visible */
@@ -24,12 +27,14 @@
  
   }
   .side.side.one {
-    display: none;  
+    display: none; 
   }
   #card p {
-    padding-left: 0 !important; /* Eliminar el relleno a la izquierda en dispositivos mÃ³viles */
-    padding-right: 0 !important; /* Eliminar el relleno a la derecha en dispositivos mÃ³viles */
-    font-size: 1.3em !important;
+    padding-left: 1 !important; /* Eliminar el relleno a la izquierda en dispositivos mÃ³viles */
+    padding-right: 1 !important; /* Eliminar el relleno a la derecha en dispositivos mÃ³viles */
+    font-size: .8em !important;
+
+
   }
   
     .valentines-day {
@@ -283,5 +288,8 @@ body {
 
   .text {
       font-size: 1em; /* Ajuste del tamaÃ±o de fuente */
+  }
+  body, #card h2, #card p, .text, .made-with-love {
+    font-family: 'Poppins', sans-serif !important;
   }
 }
